@@ -8,7 +8,7 @@ server.use(express.json());
 server.use(helmet());
 
 // Routes
-// server.use("/api/cars", carRouter);
+server.use("/api/cars", carRouter);
 
 server.get("/", (req, res) => {
   res.send("<h3>DB Helpers with knex</h3>");
